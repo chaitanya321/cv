@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbed Resume - Chaitanya Patil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chaitanya A. Patil</h1>
+        <p>Pune, India | Email: 1134.chaitanya@gmail.com | Phone: +91-9766-77-6237</p>
+        
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab(event, 'summary')">Summary</button>
+            <button class="tab-button" onclick="openTab(event, 'education')">Education</button>
+            <button class="tab-button" onclick="openTab(event, 'experience')">Experience</button>
+            <button class="tab-button" onclick="openTab(event, 'skills')">Technical Skills</button>
+            <button class="tab-button" onclick="openTab(event, 'books')">Books Published</button>
+            <button class="tab-button" onclick="openTab(event, 'projects')">Projects</button>
+        </div>
+        
+        <div class="tab-content active" id="summary">
+            <h2>Summary</h2>
+            <p>Hardworking and passionate job seeker with strong organizational skills. Skilled in working under pressure and adapting to new situations.</p>
+        </div>
+        
+        <div class="tab-content" id="education">
+            <h2>Educational Qualification</h2>
+            <ul>
+                <li>M.Tech (CSE), Dr. Ambedkar Institute of Technology, Bangalore - 76.12% (2012)</li>
+                <li>B.E (ISE), V.P Dr. P.G. Halakatti CET, Bijapur - 60.25% (2009)</li>
+                <li>H.S.C, S.G.B.V.M & Jr. College, Maharashtra - 77.17% (2005)</li>
+                <li>S.S.C, S.G.B.V.M & Jr. College, Maharashtra - 86.66% (2003)</li>
+            </ul>
+        </div>
+        
+        <div class="tab-content" id="experience">
+            <h2>Experience</h2>
+            <p>Freelance IT Trainer (Python Programming) since April 2017. Former Assistant Professor at MIT AOE (2013-2017).</p>
+        </div>
+        
+        <div class="tab-content" id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Programming: C, Python</li>
+                <li>Web Technologies: HTML, CSS, PHP</li>
+                <li>Databases: MySQL</li>
+                <li>Operating Systems: Windows, Ubuntu, CentOS, Fedora</li>
+            </ul>
+        </div>
+        
+        <div class="tab-content" id="books">
+            <h2>Books Published</h2>
+            <ul>
+                <li>Fundamentals of Programming Languages</li>
+                <li>Vedic Speed Mathematics</li>
+                <li>Python Programming</li>
+            </ul>
+        </div>
+        
+        <div class="tab-content" id="projects">
+            <h2>Projects</h2>
+            <p><strong>Mobile Banking System</strong> - A web-based banking system using JSP and MySQL.</p>
+            <p><strong>Drive-thru Internet Efficiency</strong> - Research on short-lived vehicular internet connections using NS2 and SUMO.</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
